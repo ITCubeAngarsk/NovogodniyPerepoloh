@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Этап 3: База подарков (SQL)</title>
+    <style>
+        body { 
+            background-color: #0d1a26; 
+            color: #ecf0f1; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .challenge-box {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #1e3a52;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+        h2 { color: #5dade2; }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 1em;
+        }
+        th, td {
+            border: 1px solid #5dade2;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #34495e;
+            color: #f1c40f;
+        }
+        .task-conditions {
+            text-align: left;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #f1c40f;
+            border-radius: 5px;
+            background: #0d1a26;
+        }
+        .hint { margin-top: 20px; border-top: 1px dashed #34495e; padding-top: 15px; }
+        .solution-area { margin-top: 30px; padding: 15px; background: #34495e; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <div class="challenge-box">
+        <h2>💾 Этап 3: База подарков (SQL) (1 балл)</h2>
+        <p>Ваша задача — найти секретный ключ в базе данных Санты, используя логику SQL-запросов.</p>
+
+        ---
+        
+        <h3>Таблица ПОДАРКИ</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                    <th>Получатель</th>
+                    <th>Статус</th>
+                    <th>Код_Ключ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Коньки</td>
+                    <td>ПЕТЯ</td>
+                    <td>ДОСТАВЛЕНО</td>
+                    <td>ДЕДМОРОЗ</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Книга</td>
+                    <td>ЛЕНА</td>
+                    <td>В_ПУТИ</td>
+                    <td>СНЕЖИНКА</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Ключ</td>
+                    <td>САНТА</td>
+                    <td>СЕКРЕТ</td>
+                    <td>САНКИ</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Планшет</td>
+                    <td>ВАСЯ</td>
+                    <td>ДОСТАВЛЕНО</td>
+                    <td>ЕЛОЧКА</td>
+                </tr>
+                <tr>
+                    <td>105</td>
+                    <td>Мандарины</td>
+                    <td>МАША</td>
+                    <td>В_ПУТИ</td>
+                    <td>ГИРЛЯНДА</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="task-conditions">
+            <h4>Условие для выборки (WHERE):</h4>
+            <p>Вам нужен **Код_Ключ** из той строки, где:</p>
+            <ul>
+                <li>**Получатель** = 'САНТА'</li>
+                <li>**Статус** = 'СЕКРЕТ'</li>
+            </ul>
+        </div>
+        
+        <p style="font-weight: bold; margin-top: 20px;">
+            Определите строку, которая соответствует обоим условиям, и выпишите **Код_Ключ**.
+        </p>
+
+        <div class="hint">
+            <details>
+                <summary style="cursor: pointer; color: #f1c40f; font-weight: bold;">Нажми сюда для ПОДСКАЗКИ!</summary>
+                <p style="margin-top: 10px; padding: 10px; background: #34495e; border-radius: 4px; color: #ecf0f1; font-size: 1em;">
+                    Ищите строку, где **Получатель** должен быть именно **САНТА** и одновременно **Статус** должен быть именно **СЕКРЕТ**.
+                </p>
+            </details>
+        </div>
+
+        <div class="solution-area">
+            <h4>Ключ для ввода на Главной Карте</h4>
+            <p>Когда вы найдете код, введите его на Главной Карте Квеста. Обязательно используйте только **ЗАГЛАВНЫЕ БУКВЫ**.</p>
+        </div>
+        
+    </div>
+    
+    <p>Нажмите <a href="../index.html" style="color: #f1c40f;">сюда</a>, чтобы вернуться на Главную Карту и ввести ключ.</p>
+
+</body>
+</html>

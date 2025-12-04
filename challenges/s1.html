@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Этап 1: Оценка Сложности (Big O)</title>
+    <style>
+        body { 
+            background-color: #0d1a26; 
+            color: #ecf0f1; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .challenge-box {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #1e3a52;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+        h2 { color: #5dade2; }
+        .problem-data { 
+            font-size: 1.2em; 
+            color: #f1c40f; 
+            margin: 20px 0; 
+            padding: 15px; 
+            background: #34495e; 
+            border-radius: 5px;
+            text-align: left;
+        }
+        .task-details {
+            text-align: left;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #5dade2;
+            border-radius: 5px;
+            background: #0d1a26;
+        }
+        .hint { margin-top: 20px; border-top: 1px dashed #34495e; padding-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="challenge-box">
+        <h2>⏰ Этап 1: Оценка Сложности (Big O) (2 балла)</h2>
+        <p>Санта проспит Новый год, если его будильник не будет работать быстро! Вам нужно оценить время работы алгоритма.</p>
+
+        ---
+        
+        <h3>Задание: Срочный расчет</h3>
+        
+        <p>Алгоритм будильника имеет **квадратичную сложность**:</p>
+        
+        <div class="problem-data">
+            <p><strong>Сложность:</strong> O(n²)</p>
+            <p><strong>Известно:</strong> 1000 событий обрабатывается за 1 секунду (Время₁).</p>
+            <p style="font-weight: bold;">Вопрос: Сколько времени (в секундах) потребуется для обработки 5000 событий?</p>
+        </div>
+
+        <div class="task-details">
+            <h4>Правило расчета:</h4>
+            <p>
+                Поскольку сложность O(n²), время работы растет пропорционально квадрату увеличения числа входных данных:
+            </p>
+            <p style="font-size: 1.2em; font-weight: bold;">Время₂ = Время₁ · (Увеличение N)²</p>
+            <p>где **Увеличение N** = (новое число событий) поделить на (исходное число событий).</p>
+            
+            <p style="font-weight: bold; color: #f1c40f;">
+                ❗ Результат в секундах (целое число) будет частью ключа.
+            </p>
+        </div>
+
+        <div class="hint">
+            <details>
+                <summary style="cursor: pointer; color: #f1c40f; font-weight: bold;">Нажми сюда для ПОДСКАЗКИ!</summary>
+                <p style="margin-top: 10px; padding: 10px; background: #34495e; border-radius: 4px; color: #ecf0f1; font-size: 1em;">
+                    Увеличение N (5000/1000) равно 5. Время увеличится в 5² раз.
+                </p>
+            </details>
+        </div>
+        
+        <p style="margin-top: 30px;">
+            <h4>Ключ для ввода на Главной Карте</h4>
+            <p>Соедините слово **СНЕЖОК** и найденное число. Обязательно используйте только **ЗАГЛАВНЫЕ БУКВЫ И ЦИФРЫ**.</p>
+        </p>
+    </div>
+    
+    <p>Нажмите <a href="../index.html" style="color: #f1c40f;">сюда</a>, чтобы вернуться на Главную Карту и ввести ключ.</p>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Этап 2: Бинарная Елка</title>
+    <style>
+        body { 
+            background-color: #0d1a26; 
+            color: #ecf0f1; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .challenge-box {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #1e3a52;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+        h2 { color: #5dade2; }
+        .cipher-text { 
+            font-size: 1.8em; 
+            color: #f1c40f; 
+            margin: 20px 0; 
+            padding: 10px; 
+            background: #34495e; 
+            border-radius: 5px;
+        }
+        .hint { margin-top: 20px; border-top: 1px dashed #34495e; padding-top: 15px; }
+        .solution-area { margin-top: 30px; padding: 15px; background: #34495e; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <div class="challenge-box">
+        <h2>💡 Этап 2: Бинарная Елка (1 балл)</h2>
+        <p>Ваша задача — расшифровать секретное слово, зашифрованное в двоичном коде, который мигает на новогодней елке.</p>
+
+        ---
+        
+        <h3>Задание: Секретный Бинарный Код</h3>
+        
+        <p>Каждые **5 битов** кодируют одну букву. Вам нужно преобразовать двоичное число в десятичное, а затем найти букву по ее порядковому номеру в русском алфавите (А=1, Б=2...).</p>
+
+        <div class="cipher-text">
+            <p style="font-weight: bold; margin: 0;">Код:</p>
+            <span style="font-weight: bold;">00110 01101 01100 00001</span>
+        </div>
+
+
+        <div class="hint">
+            <details>
+                <summary style="cursor: pointer; color: #f1c40f; font-weight: bold;">Нажми сюда для ПОДСКАЗКИ!</summary>
+                <p style="margin-top: 10px; padding: 10px; background: #34495e; border-radius: 4px; color: #ecf0f1; font-size: 1em;">
+                    <span style="font-weight: bold;">00110</span> = **6**. Шестая буква русского алфавита — **Е**. <br>
+                    По этому же принципу расшифруй остальные блоки.
+                </p>
+            </details>
+        </div>
+
+        <div class="solution-area">
+            <h4>Ключ для ввода на Главной Карте</h4>
+            <p>Когда вы расшифруете слово, введите его на Главной Карте Квеста. Обязательно используйте только **ЗАГЛАВНЫЕ БУКВЫ И ЦИФРЫ**.</p>
+        </div>
+        
+    </div>
+    
+    <p>Нажмите <a href="../index.html" style="color: #f1c40f;">сюда</a>, чтобы вернуться на Главную Карту и ввести ключ.</p>
+
+</body>
+</html>

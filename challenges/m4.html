@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Этап 4: Сортировка</title>
+    <style>
+        body { 
+            background-color: #0d1a26; 
+            color: #ecf0f1; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .challenge-box {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #1e3a52;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+        h2 { color: #5dade2; }
+        .data-array {
+            font-size: 1.6em;
+            color: #f1c40f;
+            margin: 20px auto;
+            padding: 15px;
+            background: #34495e;
+            border-radius: 5px;
+            max-width: 600px;
+            border: 1px solid #5dade2;
+        }
+        .array-step {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .key-list {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #5dade2;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: left;
+        }
+        .hint { margin-top: 20px; border-top: 1px dashed #34495e; padding-top: 15px; }
+        .solution-area { margin-top: 30px; padding: 15px; background: #34495e; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <div class="challenge-box">
+        <h2>🔄 Этап 4: Сортировка (1 балл)</h2>
+        <p>Ваша задача — отсортировать список подарков Санты, используя **Сортировку Пузырьком (Bubble Sort)**, чтобы найти секретный код.</p>
+
+        ---
+        
+        <h3>Задание: Алгоритм Сортировки</h3>
+        
+        <p>Начальный список подарков (по их весу в кг):</p>
+        <div class="data-array">
+            <span style="color: #ecf0f1;">[</span> 8, 3, 7, 1, 5, 2, 4 <span style="color: #ecf0f1;">]</span>
+        </div>
+
+        <p>
+            Отсортируйте массив по возрастанию. Затем ответьте на вопросы, чтобы составить ключ.
+        </p>
+
+        <ol style="text-align: left; max-width: 700px; margin: 20px auto;">
+            <li>Полностью отсортируйте список.</li>
+            <li>Какое число оказалось на **четвертой** позиции (считая с 1) в полностью отсортированном списке? (Это будет цифра в вашем ключе).</li>
+            <li>Используйте это число (найденное в п.2) как **индекс** в списке кодовых слов ниже, чтобы найти финальное слово.</li>
+        </ol>
+
+        <div class="key-list">
+            <h4>Список кодовых слов:</h4>
+            <p>1. ЗИМА</p>
+            <p>2. СНЕГ</p>
+            <p>3. ЕЛКА</p>
+            <p>4. ГИРЛЯНДА</p>
+            <p>5. САНКИ</p>
+        </div>
+        
+        <p style="font-weight: bold; margin-top: 20px;">
+            Найдите слово из списка.
+        </p>
+
+        <div class="hint">
+            <details>
+                <summary style="cursor: pointer; color: #f1c40f; font-weight: bold;">Нажми сюда для ПОДСКАЗКИ!</summary>
+                <p style="margin-top: 10px; padding: 10px; background: #34495e; border-radius: 4px; color: #ecf0f1; font-size: 1em;">
+                    После сортировки список будет: [1, 2, 3, 4, 5, 7, 8]. Число на 4-й позиции — **4**.
+                </p>
+            </details>
+        </div>
+
+        <div class="solution-area">
+            <h4>Ключ для ввода на Главной Карте</h4>
+            <p>Когда вы найдете код, введите его на Главной Карте Квеста. Обязательно используйте только **ЗАГЛАВНЫЕ БУКВЫ**.</p>
+        </div>
+        
+    </div>
+    
+    <p>Нажмите <a href="../index.html" style="color: #f1c40f;">сюда</a>, чтобы вернуться на Главную Карту и ввести ключ.</p>
+
+</body>
+</html>

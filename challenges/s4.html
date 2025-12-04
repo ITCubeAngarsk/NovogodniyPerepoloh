@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Этап 4: Рекурсия</title>
+    <style>
+        body { 
+            background-color: #0d1a26; 
+            color: #ecf0f1; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .challenge-box {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #1e3a52;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+        h2 { color: #5dade2; }
+        .problem-data { 
+            font-size: 1.2em; 
+            color: #f1c40f; 
+            margin: 20px 0; 
+            padding: 15px; 
+            background: #34495e; 
+            border-radius: 5px;
+            text-align: left;
+        }
+        .task-details {
+            text-align: left;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #5dade2;
+            border-radius: 5px;
+            background: #0d1a26;
+        }
+        .sequence {
+            font-family: monospace;
+            font-size: 1.1em;
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="challenge-box">
+        <h2>❄️ Этап 4: Рекурсия (3 балла)</h2>
+        <p>Санта наблюдает, как тает сосулька. Вам нужно определить ее длину в конце шестого этапа.</p>
+
+        ---
+        
+        <h3>Задание: Расчет длины сосульки</h3>
+        
+        <div class="problem-data">
+            <p>Длина сосульки уменьшается по рекурсивному закону:</p>
+            <p style="font-size: 1.5em; font-weight: bold;">f(n) = f(n-1) + f(n-2)</p>
+            <p><strong>Начальные условия:</strong> f(0) = 1, f(1) = 1.</p>
+            <p style="font-weight: bold;">Вопрос: Чему равно f(6)?</p>
+        </div>
+
+        <div class="task-details">
+            <h4>Расчет последовательности:</h4>
+            <p>Необходимо последовательно вычислить каждый член: f(2), f(3), f(4), f(5) и f(6).</p>
+            <div class="sequence">
+                f(0) = 1<br>
+                f(1) = 1<br>
+                f(2) = 1 + 1 = 2<br>
+                f(3) = 2 + 1 = 3<br>
+                f(4) = 3 + 2 = 5<br>
+                f(5) = ? + ? = ?<br>
+                f(6) = ? + ? = ? 
+            </div>
+            
+            <p style="font-weight: bold; color: #f1c40f; margin-top: 15px;">
+                ❗ Найденное числовое значение f(6) будет частью ключа.
+            </p>
+        </div>
+
+        <div class="hint">
+            <details>
+                <summary style="cursor: pointer; color: #f1c40f; font-weight: bold;">Нажми сюда для ПОДСКАЗКИ!</summary>
+                <p style="margin-top: 10px; padding: 10px; background: #34495e; border-radius: 4px; color: #ecf0f1; font-size: 1em;">
+                    Финальный член последовательности (f(6)) равен сумме f(5) и f(4).
+                </p>
+            </details>
+        </div>
+
+        <p style="margin-top: 30px;">
+            <h4>Ключ для ввода на Главной Карте</h4>
+            <p>Объедините слово **СОСУЛЬКА** и найденное число. Обязательно используйте только **ЗАГЛАВНЫЕ БУКВЫ И ЦИФРЫ**.</p>
+        </p>
+    </div>
+    
+    <p>Нажмите <a href="../index.html" style="color: #f1c40f;">сюда</a>, чтобы вернуться на Главную Карту и ввести ключ.</p>
+
+</body>
+</html>

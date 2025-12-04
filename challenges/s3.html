@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Этап 3: Битовые операции</title>
+    <style>
+        body { 
+            background-color: #0d1a26; 
+            color: #ecf0f1; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        .challenge-box {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #1e3a52;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+        h2 { color: #5dade2; }
+        .problem-data { 
+            font-size: 1.2em; 
+            color: #f1c40f; 
+            margin: 20px 0; 
+            padding: 15px; 
+            background: #34495e; 
+            border-radius: 5px;
+            text-align: left;
+        }
+        .task-details {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #5dade2;
+            border-radius: 5px;
+            background: #0d1a26;
+        }
+        .code-block {
+            font-family: monospace;
+            white-space: pre;
+            text-align: center;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="challenge-box">
+        <h2>✨ Этап 3: Битовые операции (2 балла)</h2>
+        <p>Для определения координат секретного склада Санты используется двухступенчатая битовая операция. Вам нужно найти конечный результат.</p>
+
+        ---
+        
+        <h3>Задание: Расшифровка координат</h3>
+        
+        <div class="problem-data">
+            <p><strong>Исходный код (code):</strong> 0b10101010</p>
+            <p><strong>Операция:</strong> result = (code ^ 0b11110000) & 0b11001100</p>
+            <p><strong>Условные обозначения:</strong><br>
+                ^ — Битовое **XOR** (исключающее ИЛИ)<br>
+                & — Битовое **AND** (И)
+            </p>
+            <p style="font-weight: bold;">Вопрос: Каково десятичное значение (в Base 10) конечного 8-битного результата?</p>
+        </div>
+
+        <div class="task-details">
+            <h4>Правило:</h4>
+            <p>
+                Выполните операцию слева направо: сначала **XOR** с маской 0b11110000, затем **AND** с маской 0b11001100.
+            </p>
+            <p style="font-weight: bold; color: #f1c40f;">
+                ❗ Переведите финальный бинарный результат в десятичное число. Это число будет ключом.
+            </p>
+        </div>
+
+        <div class="hint">
+            <details>
+                <summary style="cursor: pointer; color: #f1c40f; font-weight: bold;">Нажми сюда для ПОДСКАЗКИ (методика расчета)!</summary>
+                <p style="margin-top: 10px; padding: 10px; background: #34495e; border-radius: 4px; color: #ecf0f1; font-size: 1em;">
+                    **XOR** (исключающее ИЛИ): Дает 1, если биты разные (1^0 или 0^1), и 0, если одинаковые (1^1 или 0^0).<br>
+                    **AND** (И): Дает 1, только если оба бита равны 1.<br><br>
+                    Помните, что позиции битов соответствуют степеням двойки: 128, 64, 32, 16, 8, 4, 2, 1.
+                </p>
+            </details>
+        </div>
+
+        <p style="margin-top: 30px;">
+            <h4>Ключ для ввода на Главной Карте</h4>
+            <p>Объедините слово **ЗВЕЗДА** и найденное десятичное число. Обязательно используйте только **ЗАГЛАВНЫЕ БУКВЫ И ЦИФРЫ**.</p>
+        </p>
+    </div>
+    
+    <p>Нажмите <a href="../index.html" style="color: #f1c40f;">сюда</a>, чтобы вернуться на Главную Карту и ввести ключ.</p>
+
+</body>
+</html>
