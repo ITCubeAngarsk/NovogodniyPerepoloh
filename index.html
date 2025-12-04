@@ -157,18 +157,18 @@
             middle: [ 
                 { name: "Шифр Цезаря", key: 'ПОДАРКИ', challengeLink: 'challenges/m1.html', pointValue: 1, description: 'Расшифруйте сообщение, используя классический метод.' }, 
                 { name: "Бинарная елка", key: 'ЕЛКА', challengeLink: 'challenges/m2.html', pointValue: 1, description: 'Переведите бинарный код в текст.' }, 
-                { name: "База подарков (SQL)", key: 'САНКИ', challengeLink: 'challenges/m3.html', pointValue: 1, description: 'Найдите ключ, выполнив SQL-запрос.' }, 
+                { name: "База подарков", key: 'САНКИ', challengeLink: 'challenges/m3.html', pointValue: 1, description: 'Найдите ключ, выполнив SQL-запрос.' }, 
                 { name: "Сортировка", key: 'ГИРЛЯНДА', challengeLink: 'challenges/m4.html', pointValue: 1, description: 'Расположите элементы в правильном порядке.' }, 
-                { name: "Путь Санты (JS Code)", key: 'САНКИ43', pointValue: 3, description: 'Разработайте скрипт для расчета оптимального маршрута.' }, 
-                { name: "Оптимизация (JS Code)", key: 'СНОВЫМГОДОМ', challengeLink: 'challenges/m6.html', pointValue: 3, description: 'Напишите функцию для эффективного управления ресурсами.' }, 
+                { name: "Путь Санты", key: 'САНКИ43', challengeLink: 'challenges/m5.html', pointValue: 4, description: 'Разработайте скрипт для расчета оптимального маршрута.' }, 
+                { name: "Оптимизация", key: 'СНОВЫМГОДОМ', challengeLink: 'challenges/m6.html', pointValue: 4, description: 'Напишите функцию для эффективного управления ресурсами.' }, 
             ],
             senior: [ 
                 { name: "Криптография", key: 'СНЕЖОК25', challengeLink: 'challenges/s1.html', pointValue: 1, description: 'Декодируйте сообщение с помощью современного шифра.' }, 
-                { name: "JSON-API", key: 'ОЛЕНЬ2', challengeLink: 'challenges/s2.html', pointValue: 1, description: 'Извлеките ключ из сложной структуры данных.' }, 
+                { name: "NewYear-API", key: 'ОЛЕНЬ2', challengeLink: 'challenges/s2.html', pointValue: 1, description: 'Извлеките ключ из сложной структуры данных.' }, 
                 { name: "Алгоритмы", key: 'ЗВЕЗДА72', challengeLink: 'challenges/s3.html', pointValue: 1, description: 'Решите головоломку, используя логику программирования.' }, 
                 { name: "Регулярки", key: 'СОСУЛЬКА13', challengeLink: 'challenges/s4.html', pointValue: 1, description: 'Найдите паттерн среди множества строк.' }, 
-                { name: "Граф Подарков (Code)", key: 'ПОДАРОК72', challengeLink: 'challenges/s5.html', pointValue: 3, description: 'Создайте код для нахождения кратчайшего пути в графе.' }, 
-                { name: "Оптимизация Логистики (Code)", key: 'ЗАМОК18', challengeLink: 'challenges/s6.html', pointValue: 3, description: 'Разработайте высокопроизводительный код для распределения задач.' }, 
+                { name: "Граф Подарков", key: 'ПОДАРОК72', challengeLink: 'challenges/s5.html', pointValue: 4, description: 'Создайте код для нахождения кратчайшего пути в графе.' }, 
+                { name: "Оптимизация Логистики", key: 'ЗАМОК18', challengeLink: 'challenges/s6.html', pointValue: 4, description: 'Разработайте высокопроизводительный код для распределения задач.' }, 
             ]
         };
 
@@ -220,7 +220,7 @@
                 <span style="color: #f7a822;">
                     ${currentLevel === 'junior' 
                         ? 'Каждый этап = 1 балл.' 
-                        : 'Этапы 1-4 = 1 балл (ключ). Этапы 5-6 = 3 балла (ключ + код).'}
+                        : 'Этапы 1-4 = 1 балл (ключ). Этапы 5-6 = 4 балла (ключ + код).'}
                 </span>
             `;
 
@@ -293,7 +293,7 @@
                     : 'Сдайте этот ключ в Яндекс.Форму.';
 
                 const scoreText = (pointValue === 3) 
-                    ? '<span style="color:#FFD700;">Ключ (1 балл) + Код (2 балла)</span>' 
+                    ? '<span style="color:#FFD700;">Ключ (1 балл) + Код (3 балла)</span>' 
                     : `Ключ: ${pointValue} балл`;
 
                 stageDiv.innerHTML = `
@@ -344,4 +344,5 @@
         };
     </script>
 </body>
+
 </html>
